@@ -1,0 +1,40 @@
+.main-header {
+  display: flex;
+  background-color: #2faf91;
+  justify-content: space-between;
+  min-height: 45px;
+  font-size: 1.2rem;
+  align-items: center;
+  .logo {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .header-user-greet {
+    display: flex;
+    padding-right: 25px;
+    align-items: center;
+    gap: 10px;
+    button {
+      height: 40px;
+    }
+  }
+  .main-nav {
+    display: flex;
+    gap: 10px;
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-family: inherit;
+      &:last-child {
+        margin-right: 10px;
+      }
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      &.active {
+        color: #f9f871;
+      }
+    }
+  }
+}

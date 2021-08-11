@@ -1,0 +1,42 @@
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: calc(50% - 250px);
+  box-shadow: 0px 0px 8px white;
+}
+.contact-preview {
+  display: flex;
+  position: relative;
+  .remove-contact {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    opacity: 0.2;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:nth-child(odd) {
+    background-color: darken(#282c34, 5%);
+    &:hover {
+      background-color: darken(#282c34, 0%);
+    }
+  }
+  &:nth-child(even) {
+    background-color: lighten(#282c34, 5%);
+    &:hover {
+      background-color: lighten(#282c34, 0%);
+    }
+  }
+  display: flex;
+  list-style: none;
+  padding: 6px;
+  margin: 2px;
+  gap: 5px;
+  li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
